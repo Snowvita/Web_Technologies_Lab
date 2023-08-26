@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <style>
+body{
+    background-color:linen;
+}
+
+        h1{
+    animation: color-change 1.5s , zoom-rotate 1.5s ;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: lightgray;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+    color: rgb(84, 51, 11);
+}
+
+@keyframes color-change {
+    0%, 100% {
+        color: rgb(84, 51, 11);
+    }
+    50% {
+        color: rgb(105, 53, 11);
+    }
+}
+
+@keyframes zoom-rotate {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
+/* Add this to your existing CSS */
+.ambiance-photos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ambiance-photos img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.image1:hover {
+    transform: rotate(15deg) scale(1.1);
+    opacity: 0.8;
+}
+
+.image2:hover {
+    transform: scaleX(1.2) scaleY(0.8);
+    opacity: 0.8;
+}
+
+.image3:hover {
+    opacity: 0.7;
+    transform: translateY(+10px);
+}
+
+.image4 {
+    transition: transform 0.5s ease-in-out, border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.image4:hover {
+    transform: translateX(20px) rotate(5deg);
+    border-color: #ff9900;
+    box-shadow: 0px 5px 10px rgba(255, 153, 0, 0.5);
+}
+
+/* Add this to your existing CSS */
+.menu-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.menu-link {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color:rgb(92, 53, 19);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: color 0.3s;
+    font-size:large;
+}
+
+.menu-link:hover {
+    color: white;
+    background-color:rgb(92, 53, 19);
+}
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to Snowbee's Restaurant</h1>
+
+    <div class="ambiance-photos">
+        <img src="img1.jpeg" alt="Restaurant Ambiance 1" class="image1" width="300" height="300">
+        <img src="img6.jpeg" alt="Restaurant Ambiance 2" class="image2" width="300" height="300">
+        <img src="img3.jpeg" alt="Restaurant Ambiance 3" class="image3" width="300" height="300">
+        <img src="img5.jpeg" alt="Restaurant Ambiance 4" class="image4" width="300" height="300">
+    </div>
+
+    <div class="menu-links">
+        <a href="veg-menu.html" class="menu-link">Veg Menu</a>
+        <a href="non-veg-menu.html" class="menu-link">Non-Veg Menu</a>
+    </div>
+
+</body>
+</html>

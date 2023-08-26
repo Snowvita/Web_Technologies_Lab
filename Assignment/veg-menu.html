@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Veg Menu</title>
+    <style>
+        /* Add this to your existing CSS */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #eff8e8;
+            background-image: url('background-pattern.png'); /* Replace with your pattern image */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .veg-menu {
+            text-align: center;
+            padding: 20px;
+            background-color: #e7f9da;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            animation: scale-fade 1.5s ease-in-out;
+        }
+
+        @keyframes scale-fade {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .veg-menu h1 {
+            font-size: 36px;
+            color: #1e4c09;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            animation: color-change 3s infinite;
+        }
+
+        @keyframes color-change {
+            0%, 100% {
+                color: #1e4c09;
+            }
+            50% {
+                color: #70a63e;
+            }
+        }
+
+        .veg-menu .photos-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .veg-menu img {
+            max-width: 100%;
+            border-radius: 10px;
+            transition: transform 0.5s ease-in-out;
+            border: 1px solid #ddd;
+            cursor: pointer;
+        }
+
+        .veg:hover {
+            transform: translateY(-10px) scaleX(1.2);
+            filter: brightness(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="veg-menu">
+        <h1>Veg Menu</h1>
+        <div class="photos-row">
+            <img src="veg1.jpeg" alt="Veg Menu Photo 1" class="veg" width="500" height="500">
+        </div>
+    </div>
+</body>
+</html>
