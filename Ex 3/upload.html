@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Your Recipe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(pics/share.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+        }
+        .container {
+            max-width: 800px;
+            margin-left: 50px;
+            margin-top: 25px;
+            padding: 20px;
+            background: none;
+            text-align: center;
+        }
+        .recipe-form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+        .recipe-form {
+            margin-top: 20px;
+            text-align: left;
+        }
+        label {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+            display: block;
+            align-items: center;
+        }
+        input[type="file"] {
+            display: none;
+        }
+        .file-input-label {
+            display: inline-block;
+            background-color: #5b9ac1;
+            color: #fff;
+            justify-content: center;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .file-input-label:hover {
+            background-color: #0083d4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Share Your Recipe</h1>
+        <p>Click the button below to select and share your recipe file.</p>
+        <form class="recipe-form" id="recipeForm">
+            <label for="recipeFile" class="file-input-label">Select Recipe File</label>
+            <input type="file" id="recipeFile" name="recipeFile" accept=".txt,.pdf,.docx">
+        </form>
+        <script>
+            const recipeFileInput = document.getElementById("recipeFile");
+            recipeFileInput.addEventListener("change", function(event) {
+                const selectedFile = event.target.files[0];
+                if (selectedFile) {
+                    const allowedExtensions = [".txt", ".pdf", ".docx"];
+                    const fileExtension = selectedFile.name.toLowerCase().slice(-4);
+        
+                    if (allowedExtensions.includes(fileExtension)) {
+                        alert(`You've selected the file: ${selectedFile.name}\nFile uploaded successfully!`);
+                    } else {
+                        alert("Only .txt, .pdf, .docx files are allowed");
+                        recipeFileInput.value = "";
+                    }
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>
