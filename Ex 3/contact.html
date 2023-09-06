@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d3e9f3;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            max-height: 500px;
+            margin-left: 300px;
+            margin-right: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 20px;
+            background-color: #c7e5f1;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+        .contact-details {
+            float: left;
+            width: 250px;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .contact-form {
+            margin-top: 20px;
+            margin-right: 20px;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            resize: vertical;
+            height: 150px;
+        }
+        button {
+            background-color: #ff8f7b;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e6624b;
+        }
+        .social-links {
+            margin-top: 10px;
+        }
+        .social-links a {
+            text-decoration: none;
+            color: #333;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        .social-links a:hover {
+            color: grey;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .fa {   
+        padding: 10px;
+        text-align: center;  
+        margin: 5px 2px;  
+        font-size: 50px;  
+        width: 60px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-details">
+        <h2>Contact Details</h2>
+        <p><strong>Email:</strong> snowbee07@gmail.com</p>
+        <p><strong>Phone:</strong> (+91) 9345276440</p>
+        <p><strong>Address:</strong> 123 color Street, Chennai, Tamil Nadu, India</p>
+        <div class="social-links">
+            <a href="#" class="fa fa-facebook"></a>  
+            <a href="#" class="fa fa-twitter"></a>    
+            <a href="#" class="fa fa-linkedin"></a>  
+            <a href="#" class="fa fa-instagram"></a>  
+            <a href="#" class="fa fa-youtube"></a>  
+            <a href="#" class="fa fa-google"></a>  
+        </div>
+    </div>
+    <div class="container">
+        <div class="contact-form">
+            <h1>Contact Us</h1>
+            <form id="contactForm" method="post" action="your-form-handler.php" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+            if (name === "" || email === "" || message === "") {
+                alert("Please fill in all required fields.");
+                return false; 
+            }
+            alert("Message sent successfully!");
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
+            return false; 
+        }
+    </script>
+</body>
+</html>
