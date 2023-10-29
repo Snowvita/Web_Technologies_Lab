@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Cuisine Restaurant - About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f7e8;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+        .header h1 {
+            font-size: 36px;
+            color: #d64550;
+            margin-bottom: 10px;
+        }
+        .content {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .content h2 {
+            color: #d64550;
+            font-size: 24px;
+            margin-bottom: 3px;
+        }
+        .content p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .centered-image {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            padding-bottom: 20px;
+        }
+        .centered-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .header h1 {
+            animation: fadeInUp 1s ease-in-out;
+        }
+        .content h2,
+        .content p {
+            animation: fadeInLeft 1s ease-in-out;
+        }
+        .centered-image img {
+            animation: zoomIn 1s ease-in-out;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.9);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>About Snowbee's</h1>
+        </div>
+        <div class="content">
+            <h2>Our Culinary Journey</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At Snowbee's Indian Cuisine Restaurant, we are on a mission to share the rich and diverse culinary traditions of India with the world. Our journey began with a passion for authentic flavors and a dedication to preserving the heritage of Indian cuisine.</p>            
+            <h2>Crafted with Love</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our expert chefs pour their hearts into every dish, using only the finest ingredients and a harmonious blend of aromatic spices. From sizzling tandoori kebabs to creamy butter chicken and fragrant biryanis, each plate is a work of art that captures the essence of India's gastronomic diversity.</p>            
+            <div class="centered-image">
+                <img src="pics/food.jpeg" alt="Indian Cuisine" height="300" width="500">
+            </div>           
+            <h2>A Memorable Experience</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Whether you're a seasoned connoisseur of Indian cuisine or embarking on your first culinary adventure, Snowbee's promises an unforgettable dining experience. Join us in celebrating the magic of India's traditional flavors and immerse yourself in a world of taste and culture.</p>
+        </div>
+    </div>
+</body>
+</html>

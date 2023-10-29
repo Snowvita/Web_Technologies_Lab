@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0dcd5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            padding: 20px;
+            padding-left: 80px;
+            padding-right: 80px; 
+            padding-bottom: 30px;
+            background-color: #ede5d7;
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 28px; 
+            margin-bottom: 25px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"]{
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        input[type="submit"] {
+            background-color: #91784d;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #56401b;
+        }
+        textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="login_s1" method="get" onsubmit="return validateForm()">
+            <h1>Login Page</h1>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <div class="button-container">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var pass = document.getElementById("password").value;
+
+            if (name === "") {
+                alert("Name must be filled");
+                return false;
+            }
+
+            if (email === "") {
+                alert("Email must be filled");
+                return false;
+            }
+            if (!isValidEmail(email)) {
+                alert("Invalid email address");
+                return false;
+            }
+            if (pass === "") {
+                alert("Password must be entered");
+                return false;
+            }
+            if (pass.length<4 | pass.length>8) {
+                alert("Password must be atleast 4 and only upto 8 characters");
+                return false;
+            }
+
+            
+            return true;
+        }
+        function isValidEmail(email) {
+            var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return emailRegex.test(email);
+        }
+    </script>
+</body>
+</html>
