@@ -1,0 +1,111 @@
+<web-app> 
+    <servlet>
+        <servlet-name>online1_c</servlet-name>
+        <servlet-class>online1_c</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>online1_c</servlet-name>
+        <url-pattern>/online1_c</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>online2_c</servlet-name>
+        <servlet-class>online2_c</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>online2_c</servlet-name>
+        <url-pattern>/online2_c</url-pattern>
+    </servlet-mapping> 
+
+    <servlet>
+        <servlet-name>res_h1</servlet-name>
+        <servlet-class>res_h1</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>res_h1</servlet-name>
+        <url-pattern>/res_h1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>res_h2</servlet-name>
+        <servlet-class>res_h2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>res_h2</servlet-name>
+        <url-pattern>/res_h2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>contact_u1</servlet-name>
+        <servlet-class>contact_u1</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>contact_u1</servlet-name>
+        <url-pattern>/url1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>contact_u2</servlet-name>
+        <servlet-class>contact_u2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>contact_u2</servlet-name>
+        <url-pattern>/url2</url-pattern>
+    </servlet-mapping> 
+
+    <servlet>
+        <servlet-name>login_s1</servlet-name>
+        <servlet-class>login_s1</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>login_s1</servlet-name>
+        <url-pattern>/login_s1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>login_s2</servlet-name>
+        <servlet-class>login_s2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>login_s2</servlet-name>
+        <url-pattern>/login_s2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>reg_db1</servlet-name>
+        <servlet-class>reg_db1</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>reg_db1</servlet-name>
+        <url-pattern>/reg_db1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>reg_db2</servlet-name>
+        <servlet-class>reg_db2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>reg_db2</servlet-name>
+        <url-pattern>/reg_db2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>reg_db3</servlet-name>
+        <servlet-class>reg_db3</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>reg_db3</servlet-name>
+        <url-pattern>/reg_db3</url-pattern>
+    </servlet-mapping>
+</web-app>
