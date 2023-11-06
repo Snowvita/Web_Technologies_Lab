@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Examination</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7d0d0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display:block;
+        }
+        form {
+            background-color: #c1e1fc;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #0d1769;
+        }
+        h3 {
+            text-align: center;
+            color: #ff5722; 
+        }
+        p {
+            font-weight: bold;
+            color: #663399; 
+            font-size: 18px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+            transform: scale(1.2); 
+        }
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f77070; 
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s; 
+        }
+        input[type="submit"]:hover {
+            background-color: #f83636; 
+        }
+        li {
+            color: #000000; 
+            font-size: 16px; 
+        }
+    </style>    
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Quiz!</h1>
+        <h3>Test your knowledge with these general questions.</h3>
+        <div name="points">
+            <ul>
+                <b>
+                    <li>Answer all the 10 questions</li>
+                    <li>Every correct answer carries 1 point</li>
+                    <li>Score above 5 points to pass the quiz</li>
+                </b>
+            </ul>
+        </div>    
+    </header>
+    <form action="examservlet" method="post">
+        <p>Question 1: What is the capital of France?</p>
+        <input type="radio" name="answer1" value="A" required> Paris<br>
+        <input type="radio" name="answer1" value="B" required> London<br>
+        <input type="radio" name="answer1" value="C" required> Berlin<br>
+        <input type="radio" name="answer1" value="D" required> Madrid<br><br>
+        <p>Question 2: Which planet is known as the Red Planet?</p>
+        <input type="radio" name="answer2" value="A" required> Venus<br>
+        <input type="radio" name="answer2" value="B" required> Mars<br>
+        <input type="radio" name="answer2" value="C" required> Jupiter<br>
+        <input type="radio" name="answer2" value="D" required> Saturn<br><br>
+        <p>Question 3: Who wrote the play "Romeo and Juliet"?</p>
+        <input type="radio" name="answer3" value="A" required> Charles Dickens<br>
+        <input type="radio" name="answer3" value="B" required> William Shakespeare<br>
+        <input type="radio" name="answer3" value="C" required> Jane Austen<br>
+        <input type="radio" name="answer3" value="D" required> Mark Twain<br><br>
+        <p>Question 4: Which gas do plants absorb from the atmosphere?</p>
+        <input type="radio" name="answer4" value="A" required> Oxygen<br>
+        <input type="radio" name="answer4" value="B" required> Carbon Dioxide<br>
+        <input type="radio" name="answer4" value="C" required> Nitrogen<br>
+        <input type="radio" name="answer4" value="D" required> Hydrogen<br><br>
+        <p>Question 5: What is the largest mammal in the world?</p>
+        <input type="radio" name="answer5" value="A" required> Elephant<br>
+        <input type="radio" name="answer5" value="B" required> Blue Whale<br>
+        <input type="radio" name="answer5" value="C" required> Giraffe<br>
+        <input type="radio" name="answer5" value="D" required> Polar Bear<br><br>
+        <p>Question 6: Which element has the chemical symbol "H"?</p>
+        <input type="radio" name="answer6" value="A" required> Hydrogen<br>
+        <input type="radio" name="answer6" value="B" required> Helium<br>
+        <input type="radio" name="answer6" value="C" required> Nitrogen<br>
+        <input type="radio" name="answer6" value="D" required> Oxygen<br><br>
+        <p>Question 7: What is the largest organ in the human body?</p>
+        <input type="radio" name="answer7" value="A" required> Liver<br>
+        <input type="radio" name="answer7" value="B" required> Brain<br>
+        <input type="radio" name="answer7" value="C" required> Skin<br>
+        <input type="radio" name="answer7" value="D" required> Heart<br><br>
+        <p>Question 8: Which gas is most abundant in Earth's atmosphere?</p>
+        <input type="radio" name="answer8" value="A" required> Oxygen<br>
+        <input type="radio" name="answer8" value="B" required> Nitrogen<br>
+        <input type="radio" name="answer8" value="C" required> Carbon Dioxide<br>
+        <input type="radio" name="answer8" value="D" required> Hydrogen<br><br>
+        <p>Question 9: What is the chemical symbol for gold?</p>
+        <input type="radio" name="answer9" value="A" required> Gd<br>
+        <input type="radio" name="answer9" value="B" required> Ge<br>
+        <input type="radio" name="answer9" value="C" required> Go<br>
+        <input type="radio" name="answer9" value="D" required> Au<br><br>
+        <p>Question 10: Which planet is known as the "Morning Star" or "Evening Star"?</p>
+        <input type="radio" name="answer10" value="A" required> Mars<br>
+        <input type="radio" name="answer10" value="B" required> Venus<br>
+        <input type="radio" name="answer10" value="C" required> Mercury<br>
+        <input type="radio" name="answer10" value="D" required> Jupiter<br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
