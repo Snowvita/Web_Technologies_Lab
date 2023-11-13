@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu_items>
+    <menu>
+        <dish>Paneer Tikka</dish>
+        <category>Appetizer</category>
+        <price>₹150.00</price>
+        <description>Marinated cottage cheese cubes grilled to perfection, served with mint chutney.</description>
+    </menu>
+    <menu>
+        <dish>Vegetable Biryani</dish>
+        <category>Main Course</category>
+        <price>₹110.00</price>
+        <description>Fragrant rice cooked with mixed vegetables and aromatic spices, served with raita.</description>
+    </menu>
+    <menu>
+        <dish>Gulab Jamun</dish>
+        <category>Dessert</category>
+        <price>₹40.00</price>
+        <description>Deep-fried milk dumplings soaked in rose-flavored syrup, garnished with pistachios.</description>
+    </menu>
+    <menu>
+        <dish>Mango Lassi</dish>
+        <category>Beverage</category>
+        <price>₹35.00</price>
+        <description>Yogurt-based drink blended with ripe mangoes and a hint of cardamom.</description>
+    </menu>
+    <menu>
+        <dish>Chicken Biryani</dish>
+        <category>Main course</category>
+        <price>₹130.00</price>
+        <description>Fragrant basmati rice cooked with succulent chicken and aromatic spices, served with raita.</description>
+    </menu>
+    <menu>
+        <dish>Pakoras</dish>
+        <category>Starter</category>
+        <price>₹100.00</price>
+        <description>Assorted fritters made with vegetables and chickpea flour, served with mint sauce.</description>
+    </menu>
+    <menu>
+        <dish>Aloo Tikki</dish>
+        <category>Starter</category>
+        <price>₹120.00</price>
+        <description>Potato patties spiced with herbs and served with yogurt and chutneys.</description>
+    </menu>
+    <menu>
+        <dish>Mutton Rogan Josh</dish>
+        <category>Main course</category>
+        <price>₹200.00</price>
+        <description>Tender pieces of mutton cooked in a flavorful tomato and yogurt gravy.</description>
+    </menu>
+    <menu>
+        <dish>Gajar Halwa</dish>
+        <category>Dessert</category>
+        <price>₹70.00</price>
+        <description>Sweet carrot pudding garnished with nuts and cardamom.</description>
+    </menu>
+    <menu>
+        <dish>Lassi</dish>
+        <category>Beverage</category>
+        <price>₹30.00</price>
+        <description>Traditional Indian yogurt drink, available in sweet or salty variations.</description>
+    </menu>
+    <menu>
+        <dish>Kheer</dish>
+        <category>Dessert</category>
+        <price>₹35.00</price>
+        <description>Creamy rice pudding garnished with nuts and saffron, served chilled.</description>
+    </menu>
+    <menu>
+        <dish>Masala Chai</dish>
+        <category>Beverage</category>
+        <price>₹25.00</price>
+        <description>Traditional spiced tea with milk and honey, perfect for a cozy sip.</description>
+    </menu>
+</menu_items>
